@@ -1,0 +1,21 @@
+
+<div class='section-container'>
+  <div class="row justify-content-between">
+    <div class='col-6'>
+      <h5 class='sectionHeader'>{{ this.articleSection.getSectionHeader() }} </h5>
+      </div>
+    <div class='col-2 more-link'> more..
+    </div>
+  </div>
+  <hr class='headerBreak'>
+  <div class='row articleRow'>
+      <div class='card-deck'>
+        
+          <div *ngFor='let article of this.articleSection.getArticles()'>
+              <app-article-card [article]=article></app-article-card>
+          </div>
+        
+      </div>
+  </div>
+</div>
+

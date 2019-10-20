@@ -1,0 +1,9 @@
+<div class = "sidebar-sticky">
+  <ul class='navbar-dark navbar-nav'>
+      <li class='navbar-link' *ngFor="let sidebarLink of this.sidebarLinks">
+          <app-navitem [navLink]='sidebarLink'></app-navitem>
+      </li>
+  </ul>
+</div>
+
+

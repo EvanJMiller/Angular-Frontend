@@ -1,0 +1,6 @@
+  <div class="section-container">
+    <ng-container *ngFor='let articleSection of this.getArticleSections()'>
+      <app-article-section [articleSection]='articleSection'></app-article-section>
+    </ng-container>
+</div>
+

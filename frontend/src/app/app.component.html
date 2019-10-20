@@ -1,0 +1,15 @@
+<app-navbar [navLinks]='this.getNavLinks()'></app-navbar>
+<div class="container-fluid">
+    <div class='row'>
+        <nav class = "col-md-2 sidebar navbar-light">
+          <app-sidebar [sidebarLinks]='this.getSidebarLinks()'></app-sidebar>
+        </nav>
+        <div class="col-md-10 main">
+                <router-outlet>
+                    <app-articles-page [articleSections]='this.getArticleSections()'>
+                    </app-articles-page>
+                </router-outlet>
+        </div>
+    </div>
+</div>
+
